@@ -1,5 +1,5 @@
 rm(list = ls())
-
+#This code creates a Cache Matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         inversion <- NULL
@@ -16,6 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
         
 }
 
+#This code calculates the inverse
 
 cacheSolve <- function(x, ...) {
         m <- x$getInverse()
@@ -28,4 +29,5 @@ cacheSolve <- function(x, ...) {
         x$setInverse(m)
         m
 }
+
 
